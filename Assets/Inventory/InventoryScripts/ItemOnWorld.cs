@@ -10,7 +10,7 @@ public class ItemOnWorld : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Player")) ;
+        if (other.gameObject.CompareTag("Player"))
         {
             AddNewItem();
             Destroy(gameObject);
@@ -22,11 +22,22 @@ public class ItemOnWorld : MonoBehaviour
         //add item
         if (!playerInventory.itemList.Contains(thisItem))
         {
-            playerInventory.itemList.Add(thisItem);
+            // playerInventory.itemList.Add(thisItem);
+            // InventoManager.CreateNewItem(thisItem);
+            for (int i = 0; i < playerInventory.itemList.Count; i++)
+            {
+                if(playerInventory.itemList[i] == null)
+                {
+                    playerInventory.itemList[i] = thisItem;
+                        break;
+                }
+            }
         }
         else
         {
             thisItem.itemHeld += 1;
         }
+
+        InventoManager.RefreshItem();
     }
 }
