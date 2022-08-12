@@ -52,12 +52,13 @@ public class InventoManager : MonoBehaviour
             //也要清空clear slot列表
             instance.slots.Clear();
         }
-
+        //重新生成
         for (int i = 0; i < instance.myBag.itemList.Count; i++)
         {
             //CreateNewItem(instance.myBag.itemList[i]);
             instance.slots.Add(Instantiate(instance.emptySlot));
             instance.slots[i].transform.SetParent(instance.slotGrid.transform);
+            instance.slots[i].GetComponent<Slot>().slotID = i;
             instance.slots[i].GetComponent<Slot>().SetupSlot(instance.myBag.itemList[i]);
         }
 

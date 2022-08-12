@@ -86,9 +86,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0560000bc915c0045af1b5848910427c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  slotID: 0
   slotItem: {fileID: 0}
   slotImage: {fileID: 3979705089345481329}
   slotNum: {fileID: 2118633584160239975}
+  slotInfo: 
   itemInSlot: {fileID: 4662341087367406109}
 --- !u!1 &2734870699162924556
 GameObject:
@@ -173,6 +175,9 @@ GameObject:
   - component: {fileID: 4913072701917753842}
   - component: {fileID: 6782755906174111644}
   - component: {fileID: 5262869287523228969}
+  - component: {fileID: 4847673163769551436}
+  - component: {fileID: 1778791061789861072}
+  - component: {fileID: 8754246068871023074}
   m_Layer: 5
   m_Name: Item
   m_TagString: Untagged
@@ -260,6 +265,52 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &4847673163769551436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4662341087367406109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2f1aa0a98135b7419226fcebb4857ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  originalParent: {fileID: 0}
+  myBag: {fileID: 11400000, guid: 79f054e14786f4045857b43c108f3005, type: 2}
+--- !u!225 &1778791061789861072
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4662341087367406109}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!114 &8754246068871023074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4662341087367406109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1679637790, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreLayout: 1
+  m_MinWidth: -1
+  m_MinHeight: -1
+  m_PreferredWidth: -1
+  m_PreferredHeight: -1
+  m_FlexibleWidth: -1
+  m_FlexibleHeight: -1
+  m_LayoutPriority: 1
 --- !u!1 &5901845921643748550
 GameObject:
   m_ObjectHideFlags: 0

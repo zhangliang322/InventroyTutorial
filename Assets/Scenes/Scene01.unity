@@ -1651,6 +1651,7 @@ GameObject:
   - component: {fileID: 1302703327}
   - component: {fileID: 1302703326}
   - component: {fileID: 1302703325}
+  - component: {fileID: 1302703329}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1738,6 +1739,24 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1302703329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1302703324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 171dfc3733a20c445864aae54e127af2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myBag: {fileID: 11400000, guid: 79f054e14786f4045857b43c108f3005, type: 2}
+  slotGrid: {fileID: 1314778937}
+  emptySlot: {fileID: 1837954393193085375, guid: e1267a0035925794797d6144e2be3f24,
+    type: 3}
+  itemInformation: {fileID: 658754299}
+  slots: []
 --- !u!1 &1306218426
 GameObject:
   m_ObjectHideFlags: 0
@@ -1749,7 +1768,7 @@ GameObject:
   - component: {fileID: 1306218427}
   - component: {fileID: 1306218429}
   - component: {fileID: 1306218428}
-  - component: {fileID: 1306218430}
+  - component: {fileID: 1306218431}
   m_Layer: 5
   m_Name: Bag
   m_TagString: Untagged
@@ -1816,7 +1835,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1306218426}
   m_CullTransparentMesh: 0
---- !u!114 &1306218430
+--- !u!114 &1306218431
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1825,15 +1844,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1306218426}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 171dfc3733a20c445864aae54e127af2, type: 3}
+  m_Script: {fileID: 11500000, guid: 14391fd41a64120428a1e07f645c4355, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myBag: {fileID: 11400000, guid: 79f054e14786f4045857b43c108f3005, type: 2}
-  slotGrid: {fileID: 1314778937}
-  emptySlot: {fileID: 1837954393193085375, guid: e1267a0035925794797d6144e2be3f24,
-    type: 3}
-  itemInformation: {fileID: 658754299}
-  slots: []
+  canvas: {fileID: 0}
 --- !u!1 &1314778937
 GameObject:
   m_ObjectHideFlags: 0
